@@ -1,0 +1,48 @@
+/*Set body tag attributes*/
+body{
+    /*Set the background image of website*/
+    background-image: url("remy_loz-EBxeeep1v2A-unsplash.jpg");
+
+    /*The image won't be reapeted if it was smaller than the screen size*/
+    background-repeat: no-repeat;
+
+    /*The background image is fixed at the center of the screen and covers the whole screen. 
+    If the main size of image is bigger than screen, a part of image will be displayed.
+    It won't scroll if the image size is bigger than the screen*/
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: auto;
+
+    /*Set display to flex.
+    Display body's child block (div tag with id=content) at the center both horizontally and vertically*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Set attributes of tag with id=content*/
+#content{
+    /*The size of this block will be set according to size of it's content*/
+    height: auto;
+    width: auto;
+
+    /*Set color of block
+    Set transparent and blur background*/
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+
+    /*Set paddings*/
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    /*Set border*/
+    box-shadow: inset 0 0 0 5px lightGreen;
+    border-radius: 15px;
+
+    /*Set text color*/
+    color: tomato;
+}
